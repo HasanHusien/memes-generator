@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  /* font-family: monospace; */
+  margin: 0;
+  background-color: #f9fafb;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+main {
+  margin-inline: auto;
+  padding: 10px 5px;
+  max-width: 600px;
+}
+
+.parent {
+  padding: 0px 5px;
+}
+.Unlimited {
+  font-size: 13px;
+  font-weight: 600;
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  padding: 20px 15px;
+  border-radius: 6px;
+}
+
+.header > img {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header > h1 {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.form {
+  display: grid;
+  grid-template: auto auto / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+.form input {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #afafaf;
+  text-indent: 5px;
+  background-color: #f9fafb;
+}
+.form input:focus {
+  
+}
+.form button {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button.download {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+}
+.form input,
+.form button {
+  min-height: 40px;
+  font-family: "Karla", sans-serif;
+}
+
+.meme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.meme span {
+  position: absolute;
+  text-align: center;
+  margin-block: 15px;
+  padding-inline: 5px;
+  font-family: impact, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+@media (max-width: 500px) {
+  .meme span {
+    font-size: 1.4rem;
+  }
+}
+
+.chat-btn {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  width: 40px;
+  height: 40px;
+
+  text-align: center;
+}
+
+.icon {
+  color: #711f8d;
+  font-size: 28px;
+}
+
+.dwon {
+  margin-top: 7px;
+  margin-left: 5px;
+}
